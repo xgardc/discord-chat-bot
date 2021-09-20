@@ -26,7 +26,7 @@ def get_response(message):
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f"I logged in as {self.user}")
-        activity = discord.Game(name="+info")
+        activity = discord.Game(name="prod by xgârd!")
         await self.change_presence(status=discord.Status.idle, activity=activity)
 
     async def on_message(self, message):
