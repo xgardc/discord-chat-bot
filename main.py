@@ -32,7 +32,7 @@ class MyClient(discord.Client):
     async def on_message(self, message):
         if message.author.bot:
             return
-        if message.channel.id == 889285128331857950:
+        if message.channel.id == 889315086479544340:
             await message.channel.send(get_response(message=message.content))
 
 
